@@ -59,6 +59,7 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
+            {/* A propos */}
             <Nav.Item>
               <Nav.Link
                 as={Link}
@@ -69,6 +70,22 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
+
+            {/* Mon expérience */}
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/experience"
+                onClick={() => updateExpanded(false)}
+              >
+                <AiOutlineFundProjectionScreen
+                  style={{ marginBottom: "2px" }}
+                />{" "}
+                Mon expérience
+              </Nav.Link>
+            </Nav.Item>
+
+            {/* Mes projects */}
             <Nav.Item>
               <Nav.Link
                 as={Link}
@@ -85,10 +102,10 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/resume"
+                to="/recapiculatif"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Résumé
+                <CgFileDocument style={{ marginBottom: "2px" }} /> Récapiculatif
               </Nav.Link>
             </Nav.Item>
 
